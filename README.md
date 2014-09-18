@@ -18,12 +18,16 @@ TK
 
 ## markup fetcher
 
+two modes: one-shot or list via stdin
+
+* options:
+  * http auth
+  * http req headers (cookies, etc.)
 * input: list of URLs
 * task: get markup of provided URLs
   * fetch
     * via curl?
     * via phantomjs?
-  * Q: cookies (sessions, etc.)
   * save data into mongodb
     * run ID (generated)
     * URL
@@ -67,6 +71,8 @@ TK
   * (id)
   * run_id
   * url
+  * http_status
+  * http_headers
   * html_source
   * html_source_rendered
   * metadata
@@ -87,13 +93,7 @@ TK
     * ???
   * created_at
 
-* run
-  * page_ids (list)
-  * project_id
-  * begin_datetime
-  * end_datetime
-
-* project
-  * id
-  * run_ids
-
+* pageset
+  * (id)
+  * name
+  * page_ids: []
