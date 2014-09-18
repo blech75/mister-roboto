@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+
+// configure options
+// - HTTP auth, headers
+// - served and/or rendered markup
+// - silent/verbose
+// - follow redirects
+// - store 4xx / 5xx errors as pages
+
+
+// parse/validate input: stdin (one per line) or single URL as arg
+
+// read mongodb configuration; instantiate mongodb
+
+// create new 'pageset' object; insert into mongodb
+
+// iterate over URL list
+
+// - make HTTP request, handling any errors
+//   Q: how to handle HTTP statuses (redirects/errors/etc)?
+
+// - capture HTTP response headers/body
+
+// - prepare data for insertion into mongodb
+
+// - store in mongodb; associate with pageset
+
+// - log status for URL
+
+// iteration complete; output summary
