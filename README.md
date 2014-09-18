@@ -18,12 +18,13 @@ TK
 
 ## markup fetcher
 
-two modes: one-shot or list via stdin
-
+* command: `mr-fetch`
 * options:
   * http auth
   * http req headers (cookies, etc.)
-* input: list of URLs
+* input (two modes):
+  * single URL (one-shot)
+  * list of URLs via stdin (pageset)
 * task: get markup of provided URLs
   * fetch
     * via curl?
