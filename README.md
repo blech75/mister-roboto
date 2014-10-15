@@ -44,7 +44,7 @@ TK
 
 ## accessibility checker
 
-* input: run ID, accessiblity options
+* input: run ID, accessibility options
 * task: validate served markup on tenon (or other tools)
   * get list of pages based on run ID
   * pass each page's markup to checker
