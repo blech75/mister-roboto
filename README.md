@@ -71,28 +71,33 @@ TK
 * page
   * (id)
   * run_id
+  * created_at
   * url
+  * page_version_ids: []
+
+* page_version
+  * (id)
+  * page_id
+  * created_at
   * http_status
   * http_headers
   * html_source
   * html_source_rendered
   * metadata
     * title
-  * reports
-    * a11y
-      * created_at
-      * data
-    * link
-      * created_at
-      * data
-    * spellng
-      * created_at
-      * data
-    * har
-      * created_at
-      * data
     * ???
+  * page_version_reports: []
+
+* page_version_report
+  * (id)
+  * page_version_id
+  * report_type_id
   * created_at
+  * data (custom JSON)
+
+* report_type
+  * name (a11y|link|spelling|har|...)
+  * processor?
 
 * pageset
   * (id)
