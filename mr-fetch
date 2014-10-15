@@ -11,6 +11,8 @@
 
 // parse/validate input: stdin (one per line) or single URL as arg
 
+// report and break on any parsing issues with URLs immediately
+
 // read mongodb configuration; instantiate mongodb
 
 // create new 'pageset' object; insert into mongodb
