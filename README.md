@@ -81,6 +81,8 @@ TK
   * created_at
   * http_status
   * http_headers
+  * http_headers_parsed: []
+    * (name/value pairs)
   * html_source
   * html_source_rendered
   * metadata
